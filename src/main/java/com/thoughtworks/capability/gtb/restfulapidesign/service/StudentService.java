@@ -28,4 +28,8 @@ public class StudentService {
     public List<Student> getAllStudents() {
         return new ArrayList<>(students.values());
     }
+
+    public Student getStudentById(Integer id) {
+        return students.get(id);
+    }
 }
